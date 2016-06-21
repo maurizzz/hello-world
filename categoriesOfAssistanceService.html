@@ -41,7 +41,8 @@
 <!-- content area -->    
 	<section id="content" class="wide-content">
       <div class="row">
-      	<div class="grid_6"><a class="category hand" value="highlights">HIGHLIGHTS</a></div><div class="grid_6">&nbsp;</div>
+      	<div class="grid_12 center"> 
+        	<a value="highlights" class="category hand">HIGHLIGHTS<a></div>
       	<div class="grid_6">
 			<a value="gestione" class="category hand"><img class="middle" src="images/01_Gestione_Linea_e_Servizi_v1_0.png">Gestione linea e Servizi</a>
 		</div>
@@ -78,10 +79,10 @@
 $(".category").click(function() {
 	if($(this).attr("value")==="highlights")
 		location.href='highlights.html';
-	else if (typeof(Storage) !== "undefined"){
+	/*if (typeof(Storage) !== "undefined"){
 		localStorage.setItem("cat", $(this).attr("value"));
 		location.href='AssistanceServicesByCategory.html';
-		}
+		}*/
 });	
 </script>
 </html>
