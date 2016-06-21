@@ -85,27 +85,14 @@ jQuery(document).ready(function($){//primo accesso
  			cache: false,
 			contentType: 'text/html',
 			success: function(data) {
-				$("#promozione").html(data);
+				//$("#promozione").html(data);
 				alert("qualcosa va");
-				localStorage.removeItem("type");
-				localStorage.removeItem("quest");
-				bindButtonClick();
+				//localStorage.removeItem("type");
+				//localStorage.removeItem("quest");
+				//bindButtonClick();
 			}
 		})
-
-$(".category").click(function(eventObject ) { //navigazione da side-bar
-	$.ajax({
-			url: "php/prova.php",
-			data: {quest: "promozione",req: $( this ).attr("value") },
-			type: "GET",
-			dataType: 'html',
-			contentType: 'text/html',
-			success: function(data) {
-				$("#devices").html(data);
-				bindButtonClick();
-				}
-		})
-});
+/*
 function bindButtonClick(){
 	$("button").click(function() {//navigation of the buttons Dettagli
 		if (typeof(Storage) !== "undefined"){
@@ -114,7 +101,7 @@ function bindButtonClick(){
 			location.href='device.html';
 		}
 	});	
-}
+}*/
 });//closed ready
 </script>
 
