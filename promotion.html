@@ -75,39 +75,7 @@
 <script src="js/main.js"></script>
 <script type="text/javascript">
 alert("prima di ready");
-jQuery(document).ready(function($){//primo accesso
-alert("prima chiamata");
-		$.ajax({
-			type: "POST",
-			data: {quest: "promozione"},
-			url: "http://localhost/php/prova.php",
-			//dataType: 'html',
-			//crossDomain: true,
- 		//	cache: false,
-		//	contentType: 'text/html',
-			success: function(data) {
-				//$("#promozione").html(data);
-				alert("qualcosa va");
-				//localStorage.removeItem("type");
-				//localStorage.removeItem("quest");
-				//bindButtonClick();
-			}
-			error: function(){
-				alert("qualcosa non va");
-			}
-			
-		})
-/*
-function bindButtonClick(){
-	$("button").click(function() {//navigation of the buttons Dettagli
-		if (typeof(Storage) !== "undefined"){
-			localStorage.setItem("type", $(this).data("type"));
-			localStorage.setItem("id", $(this).data("id"));		
-			location.href='device.html';
-		}
-	});	
-}*/
-});//closed ready
+
 </script>
 
 </html>
