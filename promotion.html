@@ -74,12 +74,11 @@
 <script src="js/jquery-3.0.0.min.js"></script> 
 <script src="js/main.js"></script>
 <script type="text/javascript">
-alert("prima di ready");
 jQuery(document).ready(function($){//primo accesso
-alert("prima chiamata");
 	$.ajax({
 		type: "POST",
 		url: "php/prove.php",
+		data: {quest:"devices_caracteristich"},
 		crossDomain: true,
 		cache: false,
 		success: function(data){
