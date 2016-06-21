@@ -48,7 +48,7 @@
 <!-- content area -->    
 	<section id="content" class="wide-content">
     	<div class="row">
-             <div value="promozione" class="grid_12 center category hand">TUTTI I DEVICE TIM IN PROMOZIONEEEEEEEEEEEEEEEEE</a></div>
+             <div value="promozione" class="grid_12 center category hand">TUTTI I DEVICE TIM IN PROMOZIONE</div>
             <div id="promozione">
             	qui ci vanno i device
             </div>
@@ -77,7 +77,6 @@
 
 jQuery(document).ready(function($){//primo accesso
 		$.ajax({
-			http://localhost/phonegap/database/update.php
 			url: "http://localhost/php/chiamate.php",
 			data: {quest: "promozione",req: localStorage.type},
 			type: "GET",
@@ -95,7 +94,7 @@ jQuery(document).ready(function($){//primo accesso
 
 $(".category").click(function(eventObject ) { //navigazione da side-bar
 	$.ajax({
-			url: "projectalunnicalcaterra.altervista.org/php/chiamate.php",
+			url: "http://localhost/php/chiamate.php",
 			data: {quest: "promozione",req: $( this ).attr("value") },
 			type: "GET",
 			dataType: 'html',
