@@ -77,13 +77,13 @@
 jQuery(document).ready(function($){//primo accesso
 	$.ajax({
 		type: "POST",
-		url: "php/prove.php",
+		url: "http://localhost/php/prove.php",
 		data: {quest:"devices_caracteristich"},
 		crossDomain: true,
 		cache: false,
 		success: function(data){
-			alert("porco");
-			$("#promozione").add("ciao");
+			alert(data);
+			$("#promozione").html("ciao");
 		}
 	});
 
