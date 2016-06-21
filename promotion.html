@@ -78,13 +78,13 @@
 jQuery(document).ready(function($){//primo accesso
 alert("prima chiamata");
 		$.ajax({
-			url: "php/prova.php",
-			data: {quest: "promozione"},
 			type: "POST",
-			dataType: 'html',
-			crossDomain: true,
- 			cache: false,
-			contentType: 'text/html',
+			data: {quest: "promozione"},
+			url: "http://localhost/php/prova.php",
+			//dataType: 'html',
+			//crossDomain: true,
+ 		//	cache: false,
+		//	contentType: 'text/html',
 			success: function(data) {
 				//$("#promozione").html(data);
 				alert("qualcosa va");
@@ -92,6 +92,10 @@ alert("prima chiamata");
 				//localStorage.removeItem("quest");
 				//bindButtonClick();
 			}
+			error: function(){
+				alert("qualcosa non va");
+			}
+			
 		})
 /*
 function bindButtonClick(){
