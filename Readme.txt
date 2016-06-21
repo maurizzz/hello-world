@@ -1,5 +1,4 @@
 problema nelle immagini dei device su mobile
-diocane attenti al cassani
 nei modem cè solo immagine front, le altre formano dei quadrati bianchi che vanno eliminati
 mancano i link nella index
 mancano le caratteristiche tecniche in alcuni device
