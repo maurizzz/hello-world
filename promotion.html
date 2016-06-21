@@ -79,15 +79,12 @@ jQuery(document).ready(function($){//primo accesso
 alert("prima chiamata");
 	$.ajax({
 		type: "POST",
-		url: url,
+		url: "php/prove.php",
 		data: dataString,
 		crossDomain: true,
 		cache: false,
 		success: function(data){
 			alert("porco");
-		}
-		error: function(data){
-			alert("chi?");
 		}
 	});
 
