@@ -77,7 +77,7 @@
 
 jQuery(document).ready(function($){//primo accesso
 		$.ajax({
-			url: "php/chiamate.php",
+			url: "projectalunnicalcaterra.altervista.org/php/chiamate.php",
 			data: {quest: "promozione",req: localStorage.type},
 			type: "GET",
 			dataType: 'html',
@@ -92,7 +92,7 @@ jQuery(document).ready(function($){//primo accesso
 
 $(".category").click(function(eventObject ) { //navigazione da side-bar
 	$.ajax({
-			url: "php/chiamate.php",
+			url: "projectalunnicalcaterra.altervista.org/php/chiamate.php",
 			data: {quest: "promozione",req: $( this ).attr("value") },
 			type: "GET",
 			dataType: 'html',
