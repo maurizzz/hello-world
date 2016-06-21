@@ -77,15 +77,16 @@
 alert("prima di ready");
 jQuery(document).ready(function($){//primo accesso
 alert("prima chiamata");
-		$.ajax({
-			type: "POST",
-			success: function() {
-				alert("qualcosa va");
-			}
-			error: function(){
-				alert("qualcosa non va");
-			}
-		})
+	$.ajax({
+		type: "POST",
+		url: url,
+		data: dataString,
+		crossDomain: true,
+		cache: false,
+		success: function(data){
+			window.location.href = "index.html";
+		}
+	});
 
 });//closed ready
 </script>
