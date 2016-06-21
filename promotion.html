@@ -77,10 +77,12 @@
 
 jQuery(document).ready(function($){//primo accesso
 		$.ajax({
-			url: "projectalunnicalcaterra.altervista.org/php/chiamate.php",
+			url: "http://projectalunnicalcaterra.altervista.org/php/chiamate.php",
 			data: {quest: "promozione",req: localStorage.type},
 			type: "GET",
 			dataType: 'html',
+			crossDomain: true,
+ 			cache: false,
 			contentType: 'text/html',
 			success: function(data) {
 				$("#promozione").html(data);
