@@ -1,4 +1,5 @@
 <?php
+echo "test";
 $con = mysqli_connect('localhost','projectalunnicalcaterra','','my_projectalunnicalcaterra');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
