@@ -72,11 +72,12 @@ Home &raquo; Devices By Category &raquo; <div id="navigation_elem"></div>
 
 jQuery(document).ready(function($){//primo accesso
 		$.ajax({
-			url: "php/chiamate.php",
+			url: "http://projectalunnicalcaterra.altervista.org/php/chiamate.php",
 			data: {quest: "devices",req: localStorage.type},
 			type: "GET",
 			dataType: 'html',
 			contentType: 'text/html',
+			crossDomain: true,
 			success: function(data) {
 				$("#devices").html(data);
 				localStorage.removeItem("type");
