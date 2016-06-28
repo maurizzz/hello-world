@@ -88,11 +88,9 @@ jQuery(document).ready(function($){//primo accesso
 
 $(".category").click(function(eventObject ) { //navigazione da side-bar
 	$.ajax({
-			url: "php/chiamate.php",
+			url: "http://projectalunnicalcaterra.altervista.org/php/chiamate.php",
 			data: {quest: "devices",req: $( this ).attr("value") },
-			type: "GET",
-			dataType: 'html',
-			contentType: 'text/html',
+			type: "POST",
 			success: function(data) {
 				$("#devices").html(data);
 				bindButtonClick();
