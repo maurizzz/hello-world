@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon">
-<script src="phonegap.js"></script>
+
 <!-- CSS-->
 <!-- Google web fonts. You can get your own bundle at http://www.google.com/fonts. Don't forget to update the CSS accordingly!-->
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
@@ -83,6 +83,11 @@
 </body>
 <script src="js/jquery-3.0.0.min.js"></script> 
 <script src="js/main.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
 <script type="text/javascript">
 $(".category").click(function() {
 	if (typeof(Storage) !== "undefined")
