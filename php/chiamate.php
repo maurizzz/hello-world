@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 echo "test";
 $con = mysqli_connect('localhost','projectalunnicalcaterra','','my_projectalunnicalcaterra');
 if (!$con) {
